@@ -1,0 +1,378 @@
+/* index */
+.t-index header,
+.t-shareholder header{
+    background-color: #53CECB;
+    color:#003B45;
+}
+
+/* header menu & hamburger_menu*/
+.c-menu_item > a{
+    color:#003B45;
+}
+
+.t-index footer{
+    background-color: #ECF4F8;
+}
+
+.t-index .c-footer_block__title{
+    color: #456184;
+}
+
+.t-index .c-news .c-news_label { 
+    background-image: url("../images/zh_TW/index/img_hotnews.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #257D82;
+}
+
+.t-index .c-index_ad ul li a{
+    background-color: #41BDBA;
+    color: #fff;
+}
+
+.t-index .c-index_ad ul li a:hover{
+    background-color: #015D6B;
+    background-image: none;
+}
+
+/* 首頁-iframe */
+.t-index .c-iframe{
+    background-color: #F7FAFC;
+}
+
+/* 首頁 iframe info*/
+.t-index_info{
+    background-color: #F7FAFC;
+}
+.t-index_info .c-data_title,
+.t-index .c-data_title{
+    color: #0E7085; 
+    background: #F7FAFC; 
+}
+
+.t-index .c-fieldset_item{
+    color:#4A4A4A;
+}
+
+.t-index .c-footer_list{
+    font-size: 14px;
+    color: #585858;
+}
+
+.t-index .c-footer_logo{
+    background-color: #53CECB;
+    color: #fff;
+}
+
+/* .t-shareholder */
+.t-shareholder {
+    background-color: #fff;
+}
+
+.t-shareholder footer{
+    background-color: #F8F8F8;
+    background-color: rgba(	97.3%,97.3%,97.3%, 0.9);
+    color: #848484;
+}
+
+.t-shareholder .c-main{
+    background-color: #fff;
+}
+
+.t-shareholder .c-header_userInfo{
+    font-size: 14px;
+    color: #04504E;
+}
+
+.t-shareholder .c-header,
+.t-shareholder .c-footer,
+.t-shareholder .c-menu_item{
+    background-color: transparent;
+}
+
+.t-shareholder .c-footer_list a:link{
+    color: #848484;
+}
+
+/* visited link */
+.t-shareholder .c-footer_list a:visited{
+    color: #848484;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.t-shareholder .c-footer_list a:hover,
+.t-shareholder .c-votelist a:hover{
+    color: #e3502b;
+    text-decoration: underline;
+}
+
+
+/* selected link */
+.t-shareholder .c-menu_item a:active{
+    color: #003B45;
+    text-decoration: none;
+}
+.t-shareholder .c-footer_list a:active {
+    color: #848484;
+    text-decoration: none;
+}
+
+.t-shareholder .c-votelist,
+.t-shareholder .c-main_contain,
+.t-index .c-main_contain{
+    background-color: #F7FAFC;
+    border: #DFDFDF solid 1px;
+    border-radius: 3px;
+}
+
+.t-shareholder .c-fieldset_item{
+    line-height: 2em;
+    margin-right: .5em;
+}
+
+
+.t-shareholder .c-voteform__fieldset input[type=text]{
+    width: 15em;
+}
+
+.t-shareholder .c-votelist input[type=text],
+.t-shareholder .c-voteform__fieldset input[type=text]{
+    height: 2.8em;
+    padding-left: .5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(	210, 210, 210, 0.9);
+    border-radius: 3px;
+}
+
+.t-shareholder [class^="o-table"] td{
+    line-height: 1.5em;
+    margin-top: .5em;
+}
+
+.t-shareholder [class^="o-table"] th{
+    line-height: 1.5em;
+}
+
+.t-voteTable thead th,
+.t-voteTable--view thead th,
+.t-voteTable--view tr td{
+    text-align: left;
+}
+
+.t-voteTable.c-cardTable thead th:nth-child(1),
+.t-voteTable.c-cardTable tr td:nth-child(1){
+    text-align: center;
+}
+
+/* 統計專區 */
+.t-statistic .c-main--statistic{
+    background-color: #f7fafc;
+    border: 1px solid #dbdbdb;
+    box-shadow: 0 3px 5px 2px rgba(0,0,0,0.05);
+}
+
+/* component */
+.c-login__shareholder{
+    background: #F0F9F8;
+    border: 3px solid #41BDBA;
+}
+
+.c-login__company{
+    background: #FAF5EC;
+    border: 3px solid #F59941;
+}
+
+.c-login__bank{
+    background: #F3F1ED;
+    border: 3px solid #715A48;
+}
+
+.c-cardTable thead tr{
+    background-color: #517886;
+}
+
+.c-cardTable thead tr th{
+    color: #fff;
+}
+
+.c-cardTable tbody tr:nth-child(odd){
+    background-color: #E8F4F8;
+}
+
+.c-cardTable tbody tr.o-card_subTitle{
+    background-color: transparent;
+}
+
+.c-cardTable th,
+.c-cardTable td{
+    color: #4A4A4A;
+}
+
+.c-fieldset_item.o-select{
+    background-color: #fff;
+    border-color: #B2B2B2;
+    border-width: .1em;
+    color: #686868;
+}
+
+.c-fieldset_button{
+    background-color: #6F9DA4;
+    color: #fff;
+}
+
+.c-hamburger_menu .c-menu_item{
+    background-color: #53CECB;
+    border-left-style: none;
+    border-bottom: 1px solid #389E9B;
+    border-top: 1px solid #389E9B;
+}
+
+.c-hamburger_menu .c-bottom_arrow{
+    background-color: transparent;
+    border: none;
+}
+
+.c-hamburger_menu .c-menu_item:hover{
+    background-color: #015D6C;
+    border-bottom: 1px solid #77CDCB ;
+    border-top: 1px solid #77CDCB ;
+}
+
+.c-hamburger_menu .c-bottom_arrow:hover{
+    background-color: transparent;
+    border: none;
+}
+
+.c-hamburger_menu .c-menu_item:hover > a{
+    color: #fff;
+}
+
+.c-votelist_title{
+    line-height: 2.2em;
+}
+
+.c-votelist_title h2{
+    color: #0E7085;
+}
+
+.c-votelist_pagination{
+    font-size: 14px;
+    color: #4A4A4A ;
+}
+
+.c-votelist_userInfo tr:nth-child(odd) th,
+.c-sysMsg_table tr:nth-child(odd) th{
+    background-color: #D0E5ED;
+}
+
+.c-votelist_userInfo tr:nth-child(even) th,
+.c-sysMsg_table tr:nth-child(even) th{
+    background-color: #DCE9EE;
+}
+
+.c-votelist_userInfo tr:nth-child(odd) td,
+.c-sysMsg_table tr:nth-child(odd) td{
+    background-color: #E8F4F8;
+}
+
+/* 投票過程中的備註 */
+.c-warning .c-hint{
+    background-color: rgb(38, 143, 220);
+    color: #fff;
+}
+
+/* object */
+.o-h2{
+    color: #0E7085; 
+    background: #F7FAFC; 
+}
+
+.o-button{
+    background-color: #41BDBA;
+    color: #fff;
+    border: .5px solid #A0A0A0;
+    border-radius: 3px;
+    font-size: 1.05em;
+    line-height: 1.1em;
+    vertical-align: middle;
+    min-width: 10em;
+}
+
+.o-button.c-loginBtn.is-company{
+    background-color: #F9902C;
+}
+
+.o-button.c-loginBtn.is-bank{
+    background-color: #908171;
+}
+
+.o-button:hover,
+.o-button:focus,
+.o-button:active{
+    cursor: pointer;
+    background: #015D6B;
+    color: #fff;
+}
+
+.o-card_subTitle{
+    font-weight: bold;
+}
+
+/* 狀態 */
+.is-warning{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #D0011B;
+}
+
+.is-hint{
+    color: #D0011B;
+}
+
+.c-header_pageInfo,
+.c-header_logout{
+    color: #fff;
+}
+
+/* modal */
+.jquery-modal > .modal{
+    border: .5em solid  #69DEDC;
+}
+
+@media screen and (max-width:1125px){
+    .t-shareholder .c-main,
+    .t-shareholder .c-votelist,
+    .t-shareholder .c-main_contain{
+        background-color: #fff;
+        border-style: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+
+    .c-field{
+        width: 100%;
+        background-color: #E8F4F8;
+        border: 1px solid #DFDFDF;
+        border-radius: 3px;
+        padding: 0 .5em .5em .5em;
+        margin-bottom: .5em;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,0.09);
+    }
+
+      /* 卡片式table */
+     .c-cardTable thead tr{
+         border-radius: 3px;
+    }
+
+    .c-cardTable tbody tr{
+        border-radius: 3px;
+        box-shadow: 0 3px 5px 0 rgba(0,0,0,0.09);
+    }
+    
+     .c-cardTable tbody tr.o-card_subTitle{
+         box-shadow: none;
+     }
+}

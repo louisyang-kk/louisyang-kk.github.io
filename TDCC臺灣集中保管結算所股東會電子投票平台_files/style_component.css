@@ -1,0 +1,1483 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+    /*max-width: 1960px;*/
+    width:100%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+header{
+    position: fixed;
+    top: -1px;
+    z-index: 10;
+    width: 100%;
+    height: 105px;
+    line-height: 105px;
+    margin: 0 auto;
+    background-color: #fff;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+footer{
+    position: relative;
+    top: 130px;
+    width:100%;
+    margin: 0 auto;
+    padding: .5em 0;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* 首頁廣告 */
+.c-brand_ad{
+    position: relative;
+    top: -1em;
+    text-align: right;
+    width: 100%;
+    min-height: 320px;
+    background-color: #ccc;
+    background-image: url("../images/zh_TW/index/img_banner_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* 首頁廣告_login */
+.c-brand_ad .login{
+    position: relative;
+    top:3em;
+    text-align: center;
+    padding-left: 0;
+}
+/* 首頁廣告_login_圓圈 */
+.c-brand_ad .c-ad_login_icon{
+    position: relative;
+    display: inline-block;
+    width: 10em; 
+    vertical-align: top;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    padding: 0;
+    background-color: transparent;
+}
+/* 首頁廣告_login_圓圈_連結 */
+.c-brand_ad .c-ad_login_icon a{
+    position: relative;
+}
+
+.c-luckyDraw{
+    position: relative;
+    top: -2em;
+}
+
+.c-luckyDraw__banner img{
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+}
+
+/* 中間區塊 */
+.c-main, 
+.c-main--index,
+.c-main_contain,
+.c-main--statistic{
+    position:relative;
+    top: 115px;
+    width: 100%;
+    max-width: 1240px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3em;
+}
+
+.c-main--index{
+    top: 103px;
+}
+
+.c-main--statistic{
+    top: 85px;
+}
+
+/* 中間區塊_內容 */
+.c-main_contain{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    word-break: break-word;
+}
+
+.t-shareholder .c-main_contain{
+    position:relative;
+    top: 0;
+}
+
+.c-header{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    line-height: inherit;
+    background-color: transparent;
+}
+
+.c-header_logo{
+    display:inline-block;
+    width: 18%;
+    text-align: center;
+    line-height: inherit;
+    vertical-align: middle;
+}
+/* header for 首頁 */
+.c-header_logo--index{
+    display:inline-block;
+    text-align: center;
+    line-height: inherit;
+    vertical-align: middle;
+    padding-left: 2.5em;
+}
+
+.c-header_logo--index img,
+.c-header_logo img{
+    line-height: inherit;
+    vertical-align: middle;
+}
+/* 上方選單 */
+.c-header_menu{
+    float: right;
+    width: 56%;
+    text-align: right;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 1em 0 0;
+}
+
+.c-header_menu > .c-menu_item:before{
+    content:"|";
+    margin-right: .3em;
+}
+
+.c-menu_item{
+    display:inline-block;
+    line-height: 1.5em;
+}
+
+.c-menu_item > a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.c-menu_item > img{
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.c-header_userInfo{
+    display: inline-block;
+    width: 25%;
+    text-align: left;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+.c-header_hamburger, .c-hamburger_checkbox, 
+.c-hamburger_menu, .c-header_pageInfo,
+.c-header_prev, .c-header_next,
+.c-header_cancel,
+.c-header_logout,
+.c-bottom_arrow {
+    display: none;
+}
+
+.c-header_pageInfo{
+    width: 100%;
+    text-align: center;
+    line-height: inherit;
+    font-size: 1.25em;
+}
+
+.c-header_hamburger{
+    width: 10%;
+    line-height: inherit;
+    vertical-align: middle;
+    position: fixed;
+    z-index: 20;
+}
+
+.c-hamburger_icon{
+    position: absolute;
+    right: .5em;
+    top: 0;
+}
+
+.c-hamburger_icon img{
+    width: 30px;
+    line-height: inherit;
+    vertical-align: middle;
+}
+
+.c-hamburger_menu{
+    position:fixed;
+    top: 80px;
+    left: 0px;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto; 
+    padding: 0px;
+    text-align: left;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-top:0;
+}
+
+.c-hamburger_menu > .c-menu_item{
+    display: block;
+    font-size: 1.1em;
+    padding-top: 1em;
+    padding-bottom:  1em;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.c-bottom_arrow img{
+    width: 40px;
+    height: 40px;
+}
+
+.c-header_prev, 
+.c-header_next,
+.c-header_cancel,
+.c-header_logout{
+    width: 15%;
+    cursor: pointer;
+}
+
+.c-header_prev{
+    position: absolute;
+    top: 0;
+    left: 1em;
+}
+
+.c-header_next{
+    position: absolute;
+    top: 0;
+    right: 1em;
+}
+
+.c-header_cancel,
+.c-header_logout{
+    position: absolute;
+    top: 0;
+    left: .5em;
+}
+
+.c-prev_icon,
+.c-next_icon{
+    width: 1.2em;
+    height: 100px;
+    line-height: inherit;
+    vertical-align: middle;
+}
+
+.c-cancel_icon{
+    width: 2.2em;
+    height: 100px;
+    line-height: inherit;
+    vertical-align: middle;
+}
+
+/* 首頁-最新消息 */
+.c-news{
+    width: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.c-news .c-news_label { 
+    float: left; 
+    width: 15%; 
+    height: 2.2em;
+    line-height:2.2em;
+    vertical-align: middle;
+}
+
+.c-news .c-news_label img{
+    margin-right: .5em;
+    height: .8em;
+}
+
+.c-news > marquee { 
+    float: right; 
+    width: 85%; 
+    height: 2.2em;
+    font-size: 0.8em;
+    line-height:3.2em;
+    vertical-align: middle;
+}
+
+/* 首頁-廣告區 */
+.c-index_ad {
+    position: relative; 
+    top: -2.5em;
+}
+.c-index_ad ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+.c-index_ad ul li { 
+    float: left; 
+    text-align: center; 
+}
+
+.c-index_ad .link li { 
+    width: 50%;
+}
+
+.c-index_ad .link li a { 
+    display: block; 
+    color: #585858;
+    font-size:1.1em;
+    text-decoration: none; 
+    padding: 1em 0; 
+    border: 1px solid #DFDFDF; 
+}
+
+/* 只要放首頁iframe內的page 都吃iframe的content */
+.c-index_iframe { 
+    width: 90%; 
+    margin: 0 auto; 
+    position: relative; 
+    padding: 0px 0 60px; }
+
+
+/* 首頁-中間table */
+.c-iframe{
+    position: relative;
+    top: -2.5em;
+    padding-bottom: 50%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #CDCDCD;
+}
+
+.c-iframe iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.c-data_title{ 
+    display: block;
+    position: relative; 
+    margin: 0 auto; 
+    padding: 1em 0 1em 2em; 
+    text-align: left; 
+    font-size: 1.1em; 
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.c-data .c-meeting ul { 
+    list-style-type: none; 
+    margin: 20px 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+.c-data .c-meeting ul li { 
+    float: left; 
+    width: 50%; 
+}
+
+/* 查詢欄位 */
+.c-fieldset_item{
+    margin-bottom: .8em;
+}
+
+.c-fieldset_button{
+    font-size: 16px;
+    height: 2.7em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border: 1px solid #D1D1D1;
+}
+
+/* 首頁-相關連結 */
+.c-index_otherLink { 
+    margin: 0 auto 1.25em auto; 
+    overflow: hidden; 
+}
+
+.c-index_otherLink ul { 
+    width: 100%; 
+    list-style-type: none; 
+    overflow: hidden; 
+    padding: 0; 
+    text-align: center;
+}
+
+.c-index_otherLink ul li { 
+    display: inline-block;
+    width: 30%;
+    height: 80px;
+    margin: 1em .3em;
+}
+
+.c-index_otherLink img{
+    width: 100%;
+    height: 100%;
+}
+
+.c-index_otherLink a:hover { 
+    color: #FF7012; 
+}
+.c-index_otherLink p { 
+    margin: 0; 
+}
+
+/* 登入 */
+.c-login { 
+    width: 95%;
+    text-align: center; 
+    padding: 0px; 
+    margin: 0px auto; 
+}
+
+.c-login .c-form { width:91%;padding: 30px 20px; margin: 0 auto 20px;}
+.c-login .c-form .c-login__field { padding: 5px 0; margin: 0 auto; text-align: left}
+.c-login .c-form .c-login__field label {width: 50%;display: inline-block; text-align: right; line-height: 30px; padding: 0; margin: 0; }
+.c-login .c-form .verifyImg { overflow: hidden; display: inline-block; vertical-align: middle; }
+.c-login .c-form .verifyImg img { display: block; float: left; }
+.c-login .c-form .verifyImg input { margin: 4px 0 0 2px; }
+.c-login .c-form button { margin: 20px auto 0; }
+
+.c-login .c-loginBtn{
+    vertical-align: bottom;
+}
+
+/* 登入 身分頁籤列 */
+.c-login .c-login__status{
+    margin: 0 auto; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+/* 登入 頁籤 */
+.c-login .c-login__label{
+    display: inline-block; 
+    padding: 1em 0;
+    width: 30%; 
+    height: 65px;
+    letter-spacing: normal; 
+    border-right: 1px solid #eee; 
+    background-color: #949494;
+    vertical-align: bottom;
+    font-size: 1em;
+}
+
+.c-login .c-login__label:hover{
+    cursor: pointer;
+}
+
+.c-login .c-login__label a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 登入 頁籤 圖 */
+.c-login .c-login__label img{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.c-login .c-login__label:first-child.now { background: #41BDBA; color: #fff;}
+.c-login .c-login__label:nth-child(2).now { background: #F9902C; color: #fff;}
+.c-login .c-login__label:last-child.now{ background: #908171; color: #fff;}
+
+.c-link_icon{
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: .3em;
+    vertical-align: middle;
+}
+
+.c-login .c-login__actBar{
+    position: relative;
+    left: 3em;
+    text-align: center;
+}
+
+.c-login__actBar a{
+    font-size: 1.1em;
+    margin-left: .5em;
+}
+
+/* 登入後 */
+.c-voteform, 
+.c-votelist, 
+.c-votelist_hint{
+    width: 95%;
+}
+
+.c-votelist{
+    padding: 1.5em;
+}
+
+.c-votelist_hint{
+    list-style: none;
+    padding: 0;
+}
+
+.c-votelist_hint ul{
+    list-style: none;
+}
+
+.c-votelist_hint > .c-hint{
+    text-align: left;
+}
+
+.c-votelist_docSection{
+    /*font-size: 14px;*/
+    width: 100%;
+}
+
+.c-votelist_docSection tr{
+    /*display: inline-block;   */
+}
+
+ /* 提名制 */
+.c-voteList--nomination thead th:nth-child(1),
+.c-voteList--nomination tr td:nth-child(1),
+.c-voteList--nomination thead th:nth-child(2),
+.c-voteList--nomination tr td:nth-child(2){
+    width: 10%;
+}
+
+.c-voteList--nomination thead th:nth-child(3),
+.c-voteList--nomination tr td:nth-child(3)
+.c-voteList--nomination thead th:nth-child(4),
+.c-voteList--nomination tr td:nth-child(4),
+.c-voteList--nomination thead th:nth-child(5),
+.c-voteList--nomination tr td:nth-child(5){
+    width: 20%;
+}
+
+.c-voteList--nomination thead th:nth-child(6),
+.c-voteList--nomination tr td:nth-child(6){
+    width: 30%;
+}
+
+/* 非提名制 */
+.c-voteList--nonNomination thead th:nth-child(7),
+.c-voteList--nonNomination tr td:nth-child(7){
+    width: 15%;
+}
+
+.c-voteList--nonNomination thead th:nth-child(4),
+.c-voteList--nonNomination tr td:nth-child(4){
+    width: 16%;
+}
+
+.c-voteList--nonNomination thead th:nth-child(1),
+.c-voteList--nonNomination tr td:nth-child(1),
+.c-voteList--nonNomination thead th:nth-child(2),
+.c-voteList--nonNomination tr td:nth-child(2),
+.c-voteList--nonNomination thead th:nth-child(3),
+.c-voteList--nonNomination tr td:nth-child(3){
+    width: 10%;
+}
+
+
+.c-voteList--nonNomination thead th:nth-child(5),
+.c-voteList--nonNomination tr td:nth-child(5){
+    width: 19%;
+}
+
+.c-voteList--nonNomination thead th:nth-child(6),
+.c-voteList--nonNomination tr td:nth-child(6){
+    width: 20%;
+}
+
+.c-voteform{
+    margin: 0 auto;
+    text-align: right;
+}
+
+.c-voteform__fieldset{
+    display: inline-block;
+    line-height: 1.5em;
+    text-align: left;
+    vertical-align: middle;
+    margin-left: 1em;
+}
+
+.c-voteNumTable th{
+    text-align: right;
+    width: 70%
+}
+
+.c-voteNumTable td{
+    text-align: right
+}
+
+/* 投票作業清單 */
+.c-cardTable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.c-cardTable th{
+    border-bottom: 1px solid #BFBFBF; 
+    padding: .9em .5em .8em .5em;
+    vertical-align: middle;
+}
+
+.c-cardTable td{
+    border-bottom: 1px solid #BFBFBF; 
+    padding: .9em .5em .8em .5em;
+    vertical-align: middle;
+    word-break: break-all;
+}
+
+.c-cardTable th > div{
+    vertical-align: middle;
+}
+
+.c-cardTable .c-actLink{
+    margin-right: .5em;
+    margin-left: .5em;
+}
+
+.c-cardTable tbody tr.o-card_subTitle{
+    font-size: 1.1em;
+}
+
+
+/* 備註 */
+.c-votelist_hint{
+    text-align: right;  
+    margin: .5em auto 0 auto;
+}
+
+.c-votelist{
+    margin: 0 auto;
+}
+
+.c-votelist input[type=text]{
+    width: 100%;
+}
+
+.c-votelist_actions{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.c-votelist_mainTable{
+    width: 100%;
+    margin-top: 1.5em;
+    border-collapse: collapse;
+}
+
+.c-votelist_mainTable td{
+    border-bottom: 1px solid #000; 
+    word-break: break-all;
+}
+
+.c-votelist_mainTable th{
+    font-weight: bold;
+}
+
+.c-votelist_notice{
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.c-votelist_title{
+    width: 100%;
+    text-align: center;
+}
+
+.c-votelist_title h2{
+    margin-bottom: .5em;
+}
+
+.c-votelist_pagination,
+#tbDisplayTag{
+    width: 100%;
+    text-align: center;
+}
+
+.c-pagination_icon,
+.icon_001,
+.icon_002{
+    margin-left: .3em;
+    margin-right: .3em;
+    vertical-align: middle;
+}
+
+.c-pagination_info,
+#tbDisplayTag tr td{
+    display: inline-block
+}
+
+.c-votelist_userInfo{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.c-votelist_userInfo th,
+.c-sysMsg_table th{
+    width: 35%;
+    font-weight: bold; 
+    text-align: left; 
+    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid #BFBFBF;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+}
+
+.c-votelist_userInfo td,
+.c-sysMsg_table td{
+    width: 65%;
+    border-bottom: 1px solid #BFBFBF;
+    border-top: 1px solid #BFBFBF;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+}
+
+.c-footer{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.c-footer_block{
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: .5em;
+    padding-left:  1em; 
+    padding-right:  1em; 
+    border-right: 1px solid #C4C4C4;
+}
+
+.c-footer_block:last-child{
+    border: none;
+}
+
+.c-footer_block img{
+    margin-right:  1.5em;
+    width: 150px;
+}
+
+.c-footer_copyright{
+    font-size: 0.8em;
+    width: 100%;
+    margin-top: 1em;
+    color: #585858;
+    text-align: left;
+}
+
+.c-footer_list{
+    padding-left: 0;
+    list-style: none;
+    line-height: 2em;
+}
+
+.c-footer_logo{
+    position:relative;
+    top: .5em;
+    width: 100%;
+    text-align: center;
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+
+.c-footer_logo img{
+    width: 300px
+}
+
+.c-footer__contactUs{
+    width: 50%;
+}
+
+.c-footer__infoRight{
+    width: 40%;
+}
+/* 議案清單 */
+
+.c-matterNo{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.c-matterDesc{
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+
+
+/* 訊息頁 */
+.c-sysMsg_table{
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.c-checkall{
+    cursor: pointer;
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+}
+
+.c-checkall:hover{
+    color: #e3502b;
+}
+
+.c-warning{
+    width: 100%;
+    margin-top: .5em;
+}
+
+.c-warning .c-hint{
+    text-align: left;
+    padding: .5em 1em;
+}
+
+/* 統計專區 */
+.c-evote_usage{
+    position:relative;
+    width: 100%;
+    min-height: 320px;
+    background-color: #ccc;
+    background-image: url("../images/zh_TW/statistic/img_banner_bg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.c-evote_usage__title{
+    position: relative;
+}
+
+.c-evote_usage__section{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 180px;
+    margin-right: 0.5em;
+    background-color: transparent;
+}
+
+/* 有雙行文字的內容 
+.c-evote_usage__section:nth-child(2) > .c-evote_usage__section__content,
+.c-evote_usage__section:nth-child(3) > .c-evote_usage__section__content{
+    padding-top: 1.7em;
+}
+*/
+
+.c-evote_usage__section__title{
+    height: 70px;
+    background-color: #FFC000;
+    border-radius: 3px 3px 0 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: .5em .8em;
+}
+
+.c-evote_usage__section__content{
+    position: relative;
+    height: 130px;
+    line-height: 1.5em;
+    background-color:rgba(255,255,255,0.90);
+    border-radius: 0 0 3px 3px;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+}
+
+.c-evote_usage__section__content__p{
+    color: #2b2b2b;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+.c-recent_years_data{
+    position: relative;
+}
+
+.c-recent_years_data_nav{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.c-recent_years_data_nav__title{
+    background-color: #fff;
+    color: #0E7085;
+}
+
+.c-recent_years_data_nav__label{
+    border-bottom: 2px solid #158481;
+    background: rgba(255,255,255,1);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(49%, rgba(255,255,255,1)), color-stop(100%, rgba(212,246,245,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(212,246,245,1) 99%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(212,246,245,1) 99%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 49%, rgba(212,246,245,1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4f6f5', GradientType=0 );
+    padding: 0;
+}
+
+.c-recent_years_data_nav__label__item{
+    display: inline-block;
+    width: 200px;
+    padding: 1em 2em;
+    background-color: #31B6B3;
+    border-right: .1px solid #158481;
+    color: #fff;
+    text-shadow: 0 0 8px #046D6B;
+    cursor: pointer;
+}
+
+.c-recent_years_data_nav__label__item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.c-recent_years_data_nav__label__item:nth-child(1)
+{
+    border-left: none;
+    border-top-left-radius: 5px;
+}
+
+.c-recent_years_data_nav__label__item:nth-last-child(1)
+{
+    border-right: none;
+    border-top-right-radius: 5px;
+}
+.c-recent_years_data_nav__label__item:nth-child(2n){
+    background-color: #41BDBA;
+}
+
+.c-recent_years_data__section{
+    margin: 2em 2.5em;
+    border: 1px solid #DFDFDF;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.09);
+    text-align: center;
+}
+
+.c-recent_years_data__title{
+    background-color: #527886;
+    color: #fff;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 3px 3px 0 0;
+}
+
+.c-recent_years_data__chart{
+    height: 100%;
+    max-height: 768px;
+    padding: 3em 1em;
+    border: 1px solid #DFDFDF;
+    border-radius: 0 0 3px 3px;
+    background-color: #fff;
+}
+
+.c-recent_years_data__chart img{
+    width: 100%;
+    max-width: 884px;
+}
+
+.c-bottomUp{
+    position: fixed;
+    top: 80%;
+    right: 20px;
+    z-index: 10;
+    display:none;
+}
+
+.c-bottomUp__icon{
+    width: 55px;
+    height: 55px;
+}
+
+.c-anchor{
+    display: block;
+    height: 115px; /*same height as header*/
+    margin-top: -115px; /*same height as header*/
+    visibility: hidden;
+}
+
+.c-anchor#form_01{
+    height: 20px; /*same height as header*/
+    margin-top: -20px; /*same height as header*/
+}
+
+@media screen and (max-width:1023px){
+    header{
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .c-main{
+        top: 80px;
+    }
+
+    .c-main--index{
+        top: 80px;
+    }
+
+    footer{
+        top: 130px;
+    }
+
+    .c-hamburger_menu{
+        top: 75px;
+    }
+
+    .c-prev_icon,
+    .c-next_icon,
+    .c-cancel_icon{
+        height: 80px;
+    }
+   
+    .c-voteform__fieldset{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .c-header{
+        text-align: center;
+    }
+
+    .c-header_logo--index{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .c-header_logo,
+    .c-header_userInfo,
+    .c-header_menu,
+    .c-header_menu--index{
+       display: none;
+    }
+
+    .c-header_pageInfo,
+    .c-header_prev, 
+    .c-header_next,
+    .c-header_hamburger,
+    .c-header_cancel,
+    .c-header_logout {
+        display: inline-block;
+    }
+
+    .c-votelist{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .c-hamburger_checkbox:checked ~ .c-hamburger_menu{
+        display:block;
+        z-index: 10;
+    }
+
+    .c-bottom_arrow{
+        position:fixed;
+        z-index: 15;
+        top: 300px;
+        right: 1.5em;
+    }
+
+    .c-votelist, 
+    .c-votelist_hint{
+        width: 95%;
+    }
+
+    .c-voteform,
+    .c-voteform__fieldset{
+        width: 100%;
+    }
+
+    .c-footer_block{
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    .c-iframe{ 
+        -webkit-overflow-scrolling: touch;
+        overflow-y: auto;
+        min-height: 400px; 
+    }
+
+    /* 首頁 相關網站 */
+     .c-otherLink--table ol li{
+        text-align: left;
+        border: 1px solid #DFDFDF;
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em; 
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: #fff;
+    }
+
+    .c-otherLink--table ol li a{
+        text-decoration: none;
+    }
+
+    .c-otherLink--table ol li:hover{
+        background-color: #E9E9E9;
+        cursor: pointer;
+    }
+    
+    /* 統計專區 （小版） */
+    .c-evote_usage{
+        top: -1.3em;
+        background-image: url("../images/zh_TW/statistic/img_mobile_bg.png");
+        background-size: 100% 100%;
+        background-position: initial;
+    }
+
+    .c-evote_usage{
+        border-bottom: 1px solid #000;
+    }
+
+    .c-evote_usage__section{
+        width: 100%;
+        margin-right: 0;
+        background-color: #fff;
+    }
+
+    .c-evote_usage__section__title{
+        height: 40px;
+        border-radius: 0;
+    }
+
+    .c-evote_usage__section__content{
+        height: 150px;
+        padding-top: 3em;
+    }
+
+    .c-evote_usage__section:nth-child(2) > .c-evote_usage__section__content, 
+    .c-evote_usage__section:nth-child(3) > .c-evote_usage__section__content{
+        padding-top: 3em;
+    }
+
+    .c-evote_usage__section__content__p{
+        display: inline-block;
+        font-size: 19px;
+    }
+
+    .c-recent_years_data{
+        top: -1.5em;
+    }
+
+    .c-recent_years_data_nav{
+        padding-top: 0;
+    }
+
+    .c-recent_years_data_nav__label{
+        padding-bottom: 2em;
+    }
+
+    .c-recent_years_data_nav__label__item{
+        width: 90%;
+        height: 70px;
+        line-height: 30px;
+        vertical-align: middle;
+        padding-right: .5em;
+        padding-left: .5em; 
+        border-right: none;
+        border-bottom: .1px solid #158481;
+    }
+
+    .c-recent_years_data_nav__label__item:nth-child(1){
+        border-radius: 3px 3px 0 0;
+    }
+
+
+    .c-recent_years_data_nav__label__item:nth-last-child(1){
+        border-radius: 0 0 3px 3px;
+        border-bottom: none;
+    }
+
+    .c-recent_years_data__title,
+    .c-recent_years_data__chart{
+        border-radius: 0 0 0 0;
+        border-width: 0;
+    }
+
+    .c-recent_years_data__section{
+        margin: 0;
+    }
+
+    .c-recent_years_data__chart{
+        height: 100%;
+        padding: 1em .8em;
+    }
+}
+
+.HighLight {
+    color: #FF0000;
+}
+
+ object{
+     display: none;
+ }
+
+@media screen and (max-width: 850px){
+
+    .c-main{
+        top: 90px;
+    }
+
+    .c-main--index{
+        top: 73px;
+    }
+    /* index */
+    .c-index_otherLink{
+        text-align: center;
+    }
+
+    .c-index_otherLink ul li, 
+    .c-index_otherLink ol li{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .c-index_otherLink img{
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .c-data_fieldset{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .c-news{
+        position: relative;
+        top: .3em;
+    }
+
+    .c-news .c-news_label { 
+        width: 30%; 
+        padding-left: 1%; 
+        float: left; 
+    }
+
+    .c-news > marquee { 
+        width: 70%; 
+        float: right; 
+    }
+
+    /* 卡片式table */
+     .c-cardTable thead tr{
+        display: block;
+        font-size: 14px;
+        padding: 1em;
+    }
+
+    .c-cardTable tbody tr{
+        display: block;
+        margin-bottom: 1.5em;
+        padding: 1em;
+        border: 1px solid #DFDFDF;
+    }
+
+     .c-cardTable tbody tr.o-card_subTitle{
+         margin-bottom: 0;
+         border: none;
+     }
+
+    .c-cardTable td,
+    .c-cardTable th{
+        display: inline-block;
+        vertical-align: top;
+        border-bottom: none; 
+        padding: 0;
+        margin-top: .2em;
+        text-align: left;
+        vertical-align: top;
+    }
+    /* 議案、後旋人資料列 */
+    .c-votelist_docSection{
+        width: 100%;
+    }
+
+    .c-votelist_docSection td{
+        display: inline-block;
+        width: 100%;
+        /*font-size: 14px;*/
+        /*white-space: nowrap;*/
+    }
+
+    .c-pagination_info{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .c-votelist_title h2{
+        font-size: 1.15em;
+    }
+
+    .c-votelist_userInfo th,
+    .c-votelist_userInfo td{
+        font-size: 14px;
+    }
+
+    .c-voteNumTable th{
+        width: 40%
+    }
+
+    .c-data_title{
+        left: 0;
+        width: 100%;
+    }
+
+    .c-data .c-meeting ul li { 
+        float: none; 
+        width: 100%; 
+    }
+
+    .c-warning .c-hint{
+        width: 100%;
+    }
+
+    .c-footer_block h3{
+        text-align: center;
+    }
+
+    /* 提名制 */
+    .c-voteList--nomination thead th:nth-child(1),
+    .c-voteList--nomination tr td:nth-child(1){
+        width: 15%;
+    }
+
+    .c-voteList--nomination thead th:nth-child(2),
+    .c-voteList--nomination tr td:nth-child(2),
+    .c-voteList--nomination thead th:nth-child(3),
+    .c-voteList--nomination tr td:nth-child(3),
+    .c-voteList--nomination thead th:nth-child(5),
+    .c-voteList--nomination tr td:nth-child(5){
+        width: 40%;
+    }
+
+    .c-voteList--nomination thead th:nth-child(4),
+    .c-voteList--nomination tr td:nth-child(4){
+        width: 55%;
+    }
+
+    .c-voteList--nomination thead th:nth-child(6),
+    .c-voteList--nomination tr td:nth-child(6){
+        width: 100%;
+    }
+
+    /* 非提名制 */
+    .c-voteList--nonNomination thead th:nth-child(1),
+    .c-voteList--nonNomination tr td:nth-child(1){
+        width: 15%;
+    }
+
+    .c-voteList--nonNomination thead th:nth-child(2),
+    .c-voteList--nonNomination tr td:nth-child(2){
+        width: 30%;
+    }
+
+    .c-voteList--nonNomination thead th:nth-child(3),
+    .c-voteList--nonNomination tr td:nth-child(3){
+        width: 45%;
+    }
+
+    .c-voteList--nonNomination thead th:nth-child(4),
+    .c-voteList--nonNomination tr td:nth-child(4){
+        width: 45%;
+    }
+
+    .c-voteList--nonNomination thead th:nth-child(5),
+    .c-voteList--nonNomination tr td:nth-child(5){
+        width: 53%;
+    }
+
+    .c-voteList--nonNomination thead th:nth-child(6),
+    .c-voteList--nonNomination tr td:nth-child(6),
+    .c-voteList--nonNomination thead th:nth-child(7),
+    .c-voteList--nonNomination tr td:nth-child(7){
+        width: 100%;
+    }
+
+}
+   
+@media screen and (max-width: 830px){
+    /* 登入頁頁籤 */
+    .c-login .c-login__label{
+        display: block;
+        width: 100%;
+        border: 1px solid #DFDFDF;
+    }
+
+    .c-login .c-form{ width:100%;}
+
+}
+
+@media screen and (max-width: 630px){
+    /* 首頁中間身分登入鈕*/
+    .c-brand_ad .login {
+        top: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 0;
+        margin-top: 1em;
+        text-align: center;
+    }
+
+
+    .c-brand_ad .c-ad_login_icon{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .c-brand_ad .c-ad_login_icon:focus{
+        background-color:rgba(0,53,87,0.50);
+    }
+
+    .calendarModal{
+        padding: 0;
+    }
+}
